@@ -1,7 +1,7 @@
 function llamadaAjax() {
-	$('#example tbody').empty();
-	$("#example").css("opacity" , "0");
-	$("#example").removeClass("animated fadeIn");
+	$('#operaciones tbody').empty();
+	$("#operaciones").css("opacity" , "0");
+	$("#operaciones").removeClass("animated fadeIn");
 	$.ajax({
 		type : "GET",
 		dataType : "xml",
@@ -14,12 +14,10 @@ function llamadaAjax() {
 			$('#operaciones').removeClass('hidden');
 			$(xml).find('step').each(
 				function() {
-									console.log("Elemento encontrado");
-
+					console.log("Elemento encontrado");
 					var name = $(this).find('name').text();
 					var valor = $(this).find('valor').text();
 					var result = $(this).find('result').text();
-
 					$("#contenidoTabla").append(
 						'<tr>'
 						+'<td>'+name+'</td>'
@@ -28,11 +26,11 @@ function llamadaAjax() {
 						+'</tr>').fadeIn(
 						'slow');
 				});
-			$("#example").css(
+			$("#operaciones").css(
 				"opacity" , "1"
 			);
 
-			$("#example").addClass("animated fadeIn");
+			$("#operaciones").addClass("animated fadeIn");
 			console.info("tabla cargada");
 		},
 
