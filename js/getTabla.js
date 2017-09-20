@@ -1,5 +1,8 @@
 function llamadaAjax() {
 	 $('#example tbody').empty();
+	$("#example").css("opacity" , "0");
+	$("#example").removeClass("animated fadeIn");
+
     $.ajax({
         type : "GET",
         dataType : "xml",
@@ -33,6 +36,13 @@ function llamadaAjax() {
 			    var idtest= $(this).parents('tr').attr('id');
 				window.open("test.html?id="+idtest,"_self")
 			});
+			
+			$("#example").css(
+				"opacity" , "1"
+			);
+
+			$("#example").addClass("animated fadeIn");
+			console.info("tabla cargada");
            
         },
 

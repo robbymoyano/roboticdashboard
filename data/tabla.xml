@@ -8,17 +8,32 @@
 		<resultado>OK</resultado>
 	</registro>
 	<registro>
-		<id>20170922-183411</id>
+		<id>20170922-173409</id>
 		<flujo>Envia Mail cierre</flujo>
-		<fecha>22 de Sept 2017, 18:34</fecha>
+		<fecha>22 de Sept 2017, 17:34</fecha>
 		<dispositivo>Servidor Virtualizado</dispositivo>
 		<resultado>OK</resultado>
 	</registro>
 	<registro>
-		<id>20170922-183411</id>
+		<id>20170922-143519</id>
 		<flujo>Envia Mail cierre</flujo>
-		<fecha>22 de Sept 2017, 18:34</fecha>
+		<fecha>22 de Sept 2017, 14:35</fecha>
+		<dispositivo>Servidor Virtualizado</dispositivo>
+		<resultado>ERROR</resultado>
+	</registro>
+	
+	<registro>
+		<id>20170922-153359</id>
+		<flujo>Envia Mail cierre</flujo>
+		<fecha>22 de Sept 2017, 15:33</fecha>
 		<dispositivo>Servidor Virtualizado</dispositivo>
 		<resultado>OK</resultado>
+	</registro>
+	<registro>
+		<id>20170922-143311</id>
+		<flujo>Envia Mail cierre</flujo>
+		<fecha>22 de Sept 2017, 14:33</fecha>
+		<dispositivo>Servidor Virtualizado</dispositivo>
+		<resultado>ERROR</resultado>
 	</registro>
 </tabla>
