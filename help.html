@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard</title>
+		<meta charset="UTF-8">
+		<script src="jquery-2.2.1.min.js"></script>
+
+		<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+		
+						<script src="dist/js/bootstrap.js"></script>
+
+		<script src="dist/js/dropdown.js"></script>
+		<link href="css/docs.min.css" rel="stylesheet" type="text/css" />
+		<meta name="viewport"
+			  content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<script src="js/jquery.color-2.1.2.js"></script>
+
+		<link type="text/css" rel="stylesheet" href="css/mainConcept.css?v=1.0">
+
+		<style>
+			.botonAmarillo{ 
+				color: #936e39;
+				background-color: #fcf8e3;
+				border: 2px solid #f0ad4e;
+				padding: 5px;
+			}
+
+			.botonRojo{ 
+				color: #d9534f;
+				background-color: #f2dede;
+				border: 2px solid #d9534f;
+				padding: 5px;
+			}
+
+			.botonVerde{ 
+				color: #599259;
+				background-color: #dff0d8;
+				border: 2px solid #599259;
+				padding: 5px;
+			}
+
+			.tarjeta{
+				width: 100%;
+				border-radius: 14px;
+				border: 0px solid black;
+				padding: 5px;
+			}
+
+			.tarjeta .indicadores{
+				width: 50%;
+				float: left;
+				background: rgb(247, 192, 192);
+			}
+
+			.ancho{
+				width: 50%;
+				overflow: auto;
+			}
+
+			.titulos th{
+				font-size: 1.3em;
+			}
+
+			#logo{
+				position: relative;
+				top:-14px;
+			}
+
+			#barra {
+				width: 100%;
+				height: 4px;
+				position: relative;
+				top: -31px;
+			}
+
+			.title{
+				font-size: 2.0em;
+			}
+
+			.separadorMovil{
+				height: 25px;
+			}
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+							aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+																																		   class="icon-bar"></span>
+
+					</button>
+					<a class="navbar-brand"> <img src="imag/accenture.png" id="logo" width="130px"
+												  class="icon-bar"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Monitoreo</a></li>
+						<li class="active"><a href="help.html">Ayuda</a></li>
+						<li class="dropdown"> 
+							<a href="#" class="dropdown-toggle" id="drop2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Mantenedor <span class="caret"></span> </a> 
+							<ul class="dropdown-menu" aria-labelledby="drop2"> 
+								<li><a href="#">Envio de Correos</a></li>
+								<li><a href="#">Umbrales</a></li>
+								<li role="separator" class="divider"></li> 
+								<li><a href="#">Dispositivos de Pruebas</a></li> 
+								<li><a href="#">Números de Pruebas</a></li>
+							</ul> </li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://www.accenture.com" target="_blank">Powered
+							by Accenture</a></li>
+
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+		<div class="container">
+			<div class="separadorMovil hidden-md hidden-lg"></div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title">Ayuda</div>
+
+
+					<div class="bs-callout bs-callout-info" id="callout-dropdown-positioning">
+						<h4>Antes de ejecutar el test</h4> 
+
+						<ul>
+							<li>
+								Tener el telefono en modo <code>Desarrollador</code>
+							</li>
+							<li>
+								Conecte por USB el telefono al servidor
+							</li>
+							
+							<li>
+								Iniciar <code>Appium Server</code>
+							</li>
+						</ul>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</body>
+</html>

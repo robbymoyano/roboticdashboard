@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Monitoreo</title>
+		<meta charset="UTF-8">
+		<script src="js/jquery-3.2.1.js"></script>
+		<link rel="stylesheet" href="css/animate.css">
+		<script src="dist/js/bootstrap.js"></script>
+		<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<link href="css/docs.min.css" rel="stylesheet" type="text/css" />
+		<script src="dist/js/dropdown.js"></script>
+		<script src="dist/js/collapse.js"></script>
+		<script src="dist/js/bootstrap.bundle.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script src="js/getDatos.js?v=1.175"></script>
+		<script src="js/jquery.color-2.1.2.js"></script>
+		<style>
+			
+			body {
+				padding-top: 70px;
+			}
+
+			.verde{
+				border: 0px solid #dff0d8;
+				background-color: #5cb85c !important;
+				text-align: center;
+				color: #dff0d8;
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+			.amarillo{
+				border: 0px solid #f0ad4e;
+				background-color: #f0ad4e !important;
+				text-align: center;
+				color:#fcf8e3;
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+			.rojo{
+				border: 0px solid #d9534f;
+				background-color: #d9534f !important;
+				text-align: center;
+				color: #f2dede;
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+			#contenidoTabla td {
+				cursor: pointer;
+			}
+
+			table tr td, th{
+				border: 1px solid #8d8d8d !important;
+			}
+
+			.fecha{
+				text-align: center;
+				color:#222;
+				font-size: 1.1em;
+				padding-top: 15px;
+				padding-bottom: 10px;
+			}
+
+			a, a:hover, a:active, a:visited, a:link  {
+				color: inherit;
+				text-decoration: none; /* no underline */
+			}
+
+			.botonAmarillo{ 
+				color: #936e39;
+				background-color: #fcf8e3;
+				border: 2px solid #f0ad4e;
+				padding: 5px;
+			}
+
+			.botonRojo{ 
+				color: #d9534f;
+				background-color: #f2dede;
+				border: 2px solid #d9534f;
+				padding: 5px;
+			}
+
+			.botonVerde{ 
+				color: #599259;
+				background-color: #dff0d8;
+				border: 2px solid #599259;
+				padding: 5px;
+			}
+
+			#barra {
+				width: 100%;
+				height: 4px;
+				position: relative;
+				top: -31px;
+			}
+			#example{
+			opacity: 0;
+			}
+
+		</style>
+		<script>
+			$(document).ready(
+				function() {
+					$("#selectorDia").focus();
+					var hoy=getFecha();
+					llamadaAjax(hoy,1);
+					$(".btn").click(function(){
+							
+						var hoy=getFecha();
+						$(".btn").removeClass("btn-primary");
+						$(".btn").addClass("btn-light");
+
+						$(this).removeClass("btn-light");
+						$(this).addClass("btn-primary");
+						var texto=$(this).text();
+						console.info(texto);
+
+	
+						if(texto=='Dia'){
+							llamadaAjax(hoy,1);
+							$("#fecha").text("21 de Septiembre 2017");
+						}
+
+						if(texto=='Mes'){
+							llamadaAjax(hoy,2);
+							$("#fecha").text("Septiembre 2017");
+							
+						}
+
+						if(texto=='Año'){
+							llamadaAjax(hoy,3);
+							$("#fecha").text("Todo el 2017");
+													
+						}
+					
+					});
+
+				});
+
+			function getFecha(){
+				var hoy = new Date();
+				var dd = hoy.getDate();
+				var mm = hoy.getMonth()+1; //hoy es 0!
+				var yyyy = hoy.getFullYear();
+
+				if(dd <10) {
+					dd='0'+dd
+				} 
+
+				if(mm<10) {
+					mm='0'+mm
+				} 
+
+				hoy = dd+'/'+mm+'/'+yyyy;
+				console.info(hoy);
+				return hoy;
+			}
+
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(177, 219, 250);">
+			<a class="navbar-brand" href="#">Accenture</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Monitoreo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="help.html">Ayuda</a>
+					</li>
+				</ul>
+				<span class="navbar-text">
+					Accenture Innovation
+				</span>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Ejecuciones</h3>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-sm-center">
+				<div class="col-sm-auto" id="selectorFecha">
+					<div class="btn-group" role="group" aria-label="Basic example">
+						<button type="button" class="btn btn-primary" id="selectorDia">Dia</button>
+						<button type="button" class="btn btn-light">Mes</button>
+						<button type="button" class="btn btn-light">Año</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fecha" id=fecha> 21 de Septiembre 2017 </div>
+		<div class="separadorMovil"></div>
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-md-auto">
+					<table id="example" class="table table-hover table-bordered table-responsive">
+						<thead class="thead-default">
+							<tr class="table-active">
+								<th class="active">Robot</th>
+								<th class="">Mesa</th>
+								<th class="">Flujo</th>
+								<th class="">Tiempo</th>
+								<th class="">Total</th>
+								<th class="">OK</th>
+								<th class="">Error</th>
+							</tr>
+						</thead>
+						<tbody id="contenidoTabla"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+/*!
+* Bootstrap v3.3.6 (http://getbootstrap.com)
+* Copyright 2011-2015 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+*/
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+
+
+.btn-default:focus, .btn-default:active, .btn-default.active {
+	background-color: #ffffff;
+}
+
+.btn-default:hover {
+	background-color: #ebebeb;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+
+
+.refresh {
+	padding-top: -100px;
+}
+
+.caja1 {
+	height: 23px;
+	width: 100%;
+}
+
+.color {
+	background-color: red;
+}
+
+#example {
+	
+}
+
+#example .grupo{
+
+}
+
+#example .ancho1{
+	
+	overflow: auto;
+}
+
+#example .ancho2{
+	
+	overflow: auto;
+}
+
+#example .ancho3{
+
+	overflow: auto;
+}
+
+#example tr td, tr th {
+
+}
+
+#example td, th {
+	
+}
+
+#example .label {
+	font-size: 1.3em;
+}
+
+.titulo {
+	font-size: 1.4em;
+	height: 42px;
+	padding-top: 5px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+
+
+.label-info {
+	font-size: 1.2em;
+}
+
+
+thead th {
+	text-align: center;
+}
+
+
+
+.general{
+	border: 1px solid rgb(173, 173, 173);
+	padding: 6px;
+	border-radius: 4px;
+
+}
+
+@media ( max-width : 376px) {
+	.col-md-12, .col-sm-12, .col-xs-12  {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.col-md-9, .col-sm-9 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#example tr td, tr th {
+		border: 2px solid white;
+	}
+	#example {
+		font-size: 0.7em;
+	}
+	#tickets {
+		font-size: 0.8em;
+	}
+	b {
+		font-size: 1.2em;
+	}
+	button {
+		padding-bottom: 2px;
+	}
+	#velocimetro {
+		height: 200px;
+	}
+}

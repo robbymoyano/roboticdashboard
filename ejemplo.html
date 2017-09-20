@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard</title>
+		<meta charset="UTF-8">
+		<script src="jquery-2.2.1.min.js"></script>
+		<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<script src="js/getEjemplo.js?v=1.2"></script>
+		<script>
+			$(document).ready(
+				function() {
+					//llamadaAjax();
+					$("#fecha").click(
+						function (){	
+						llamadaAjax();}
+					
+					);
+				});
+		</script>
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="title">Estadísticas</h2>
+
+					<div class="fecha" id="fecha">fecha</div>
+
+
+					<table id="example" class="table table-hover" cellspacing="0"
+						   width="100%">
+						<thead>
+							<tr class="titulos">
+								<th class="active">Sección</th>
+								<th class="">Funcionalidad</th>
+								<th class="">Ejecuciones</th>
+								<th class="">OK</th>
+								<th class="">Error</th>
+								<th class="">Cuarta</th>
+
+							</tr>
+						</thead>
+						<tbody id="contenidoTabla">
+						</tbody>
+					</table>
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grafico>
+	<registro>
+		<title>Consulta Puntos</title>
+		<subtitle>Ingreso por semana (12 jun al 18 jun)</subtitle>
+		<serieOk>50,55,52,50,12,50,40</serieOk>
+		<serieError>0,0,4,1,0,1,1</serieError>
+		<categories>Lun,Mar,Mie,Jue,Vie,Sab,Dom</categories>
+	</registro>
+</grafico>

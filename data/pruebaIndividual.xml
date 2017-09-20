@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	<code>OK</code>
+	<msg>Proceso exitoso</msg>
+	<operation>
+		<step><name>Conección a Remedy</name><valor>Conectado</valor><result>OK</result></step>
+		<step><name>Ingreso Rut</name><valor>116138727</valor><result>OK</result></step>
+		<step><name>Ocultando Teclado</name><valor>teclado oculto</valor><result>OK</result></step>
+		<step><name>Ingreso msisdn</name><valor>994762590</valor><result>OK</result></step>
+		<step><name>Ingreso pass</name><valor>2417</valor><result>OK</result></step>
+		<step><name>Login</name><valor>login</valor><result>OK</result></step>
+		<step><name>Home</name><valor>Se ingresa al Home</valor><result>OK</result></step>
+		<step><name>Beneficios Zona</name><valor>Se ingresa a Beneficios Zona</valor><result>OK</result></step>
+		<step><name>Saldo</name><valor>3.293</valor><result>OK</result></step>
+	</operation>
+</response>

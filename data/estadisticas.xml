@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboard fecha="20 de Septiembre de 2017">
+	<registro>
+		<id>13</id>
+		<seccion>Envia Mail Cierre</seccion>
+		<mesa>N2</mesa>
+		<tiempo>3 min</tiempo>
+		<funcionalidad>Batch 18:00 hrs</funcionalidad>
+		<valores>10,9,1</valores>
+		<colores>verde,verde,amarillo</colores>
+	</registro>
+	<registro>
+		<id>65</id>
+		<seccion>Crea APN</seccion>
+		<mesa>Corporativo</mesa>
+				<tiempo>2.5 min</tiempo>
+
+		<funcionalidad>On demand</funcionalidad>
+		<valores>10,10,0</valores>
+		<colores>verde,verde,verde</colores>
+	</registro>
+	<registro>
+		<id>18</id>
+		<seccion>Carga Configuracion Prepago</seccion>
+		<mesa>Configuraciones</mesa>
+				<tiempo>2 min</tiempo>
+
+		<funcionalidad>Batch 16:00 hrs</funcionalidad>
+		<valores>10,4,6</valores>
+		<colores>verde,rojo,rojo</colores>
+	</registro>
+</dashboard>

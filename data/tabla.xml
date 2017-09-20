@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla>
+	<registro>
+		<id>20170922-183411</id>
+		<flujo>Envia Mail cierre</flujo>
+		<fecha>22 de Sept 2017, 18:34</fecha>
+		<dispositivo>Servidor Virtualizado</dispositivo>
+		<resultado>OK</resultado>
+	</registro>
+	<registro>
+		<id>20170922-183411</id>
+		<flujo>Envia Mail cierre</flujo>
+		<fecha>22 de Sept 2017, 18:34</fecha>
+		<dispositivo>Servidor Virtualizado</dispositivo>
+		<resultado>OK</resultado>
+	</registro>
+	<registro>
+		<id>20170922-183411</id>
+		<flujo>Envia Mail cierre</flujo>
+		<fecha>22 de Sept 2017, 18:34</fecha>
+		<dispositivo>Servidor Virtualizado</dispositivo>
+		<resultado>OK</resultado>
+	</registro>
+</tabla>

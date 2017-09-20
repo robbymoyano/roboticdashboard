@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	<seccion>Beneficios Zona</seccion>
+	<flujo>Consulta Puntos</flujo>
+	<fecha>2017-Jun-23 11:45:15</fecha> 
+	<dispositivo>Samsung Galaxy J2</dispositivo> 
+	<resultado>ERROR</resultado>
+	<operation>
+		<step><name>Abre Excel para la conexión</name><valor>Abierto</valor><result>OK</result></step>
+		<step><name>Conexión a Remedy</name><valor>Conectado</valor><result>OK</result></step>
+		<step><name>Genera Informe de tickets</name><valor>Generado</valor><result>OK</result></step>
+		<step><name>Abrir informe</name><valor>Abierto</valor><result>OK</result></step>
+		<step><name>Envia correo de cierre</name><valor>No Enviado</valor><result>ERROR</result></step>
+	</operation>
+</response>
