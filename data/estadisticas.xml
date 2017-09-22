@@ -3,6 +3,7 @@
 	<registro>
 		<id>13</id>
 		<seccion>Envia Mail Cierre</seccion>
+		<contrato>Entel</contrato>
 		<mesa>N2</mesa>
 		<tiempo>3 min</tiempo>
 		<funcionalidad>Batch 18:00 hrs</funcionalidad>
@@ -12,9 +13,9 @@
 	<registro>
 		<id>65</id>
 		<seccion>Crea APN</seccion>
+		<contrato>Entel</contrato>
 		<mesa>Corporativo</mesa>
-				<tiempo>2.5 min</tiempo>
-
+		<tiempo>2.5 min</tiempo>
 		<funcionalidad>On demand</funcionalidad>
 		<valores>10,10,0</valores>
 		<colores>verde,verde,verde</colores>
@@ -22,9 +23,9 @@
 	<registro>
 		<id>18</id>
 		<seccion>Carga Configuracion Prepago</seccion>
+		<contrato>Movistar</contrato>
 		<mesa>Configuraciones</mesa>
-				<tiempo>2 min</tiempo>
-
+		<tiempo>2 min</tiempo>
 		<funcionalidad>Batch 16:00 hrs</funcionalidad>
 		<valores>10,4,6</valores>
 		<colores>verde,rojo,rojo</colores>

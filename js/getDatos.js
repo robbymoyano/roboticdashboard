@@ -19,6 +19,7 @@ function llamadaAjax(fecha, vista) {
 					var seccion = $(this).find('seccion').text();
 					var funcionalidad = $(this).find('funcionalidad').text();
 					var mesa = $(this).find('mesa').text();
+					var contrato= $(this).find('contrato').text();
 					var tiempo = $(this).find('tiempo').text();
 
 					var id = $(this).find('id').text();
@@ -29,6 +30,7 @@ function llamadaAjax(fecha, vista) {
 					$("#contenidoTabla").append(
 						'<tr flujo="'+seccion+' - '+funcionalidad+'" id="'+id+'">'
 						+'<td class="success grupo">'+seccion+'</td>'
+						+'<td class="success grupo">'+contrato+'</td>'
 						+'<td class="success grupo">' + mesa+'</a></td>'
 						+'<td class="success grupo">' + funcionalidad+'</a></td>'
 						+'<td class="success grupo">' + tiempo+'</a></td>'
