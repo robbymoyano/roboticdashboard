@@ -41,10 +41,11 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Monitoreo</a>
 					</li>
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="help.html">Ayuda</a>
 					</li>
-					<li class="nav-item">
+
+					<li class="nav-item active">
 						<a class="nav-link" href="api.html">Api Developers</a>
 					</li>
 				</ul>
@@ -58,9 +59,38 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h3>Ayuda</h3>
-					<p>En esta sección encontrarás temas de ayuda para usar correctamente el Monitor de Robotic</p>
+					<h3>Api for Developers</h3>
+					<p>En esta sección encontrarás los servicios Rest para registrar tu Robot en el Monitor</p>
+
+
+
+					<div class="card">
+						<div class="card-body">
+							<h5><code>POST http://10.43.24.100:7001/RoboticRest/resources/robot/{idrobot}?action=init</code></h5>
+							<p>Instrucción para iniciar el robot <code>idrobot</code>, retorna <code>msg</code> con el id que será usado durante el resto de la ejecución.</p>
+						</div>
+					</div>
+					<br>
+
+					<div class="card">
+						<div class="card-body">
+							<h5><code>POST http://10.43.24.100:7001/RoboticRest/resources/robot/{idrobot}/{idrun}?step=enviar%20mail&amp;value=abierto&amp;result=ERROR</code></h5>
+							<p>Instrucción para registrar una tarea realizada por el robot <code>idrobot</code>. Se registra <code>step</code> para la descripción de la tarea, <code>value</code> para los valores enviados y <code>result</code> para el resultado (OK o ERROR) de una ejcucion (<code>idrun</code>).</p>
+						</div>
+					</div>
+
+					<br>
+
+					<div class="card">
+						<div class="card-body">
+							<h5><code>PUT http://10.43.24.100:7001/RoboticRest/resources/robot/{idrobot}/{idrun}?action=finish</code></h5>
+							<p>Instrucción para finalizar la ejecución <code>idrun</code> del robot<code>idrobot</code>.</p>
+						</div>
+					</div>
+
 				</div>
+
+
 			</div>
 		</div>
 	</body>
